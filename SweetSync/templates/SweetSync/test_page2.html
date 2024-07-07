@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page 2</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+    <h1>Test Page 2</h1>
+    <img src="{% static 'images/bharrat.jpg' %}" alt="Bharrat Gehlot">
+    <p>Hello Bharrat, This is test page 2.</p>
+    <a href="{% url 'test_page' %}">Go to Test Page 1</a>
+</body>
+</html>

@@ -1,5 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 def test_page(request):
-  return HttpResponse("Hello, welcome to SweetSync")
+  return render(request, 'SweetSync/test_page.html')
+
+def test_page2(request):
+  return render(request, 'SweetSync/test_page2.html')
